@@ -13,7 +13,7 @@
 
             <li>
                 <a href="/train">Treni</a>
-                <h4>{{ $train['Azienda'] }} - {{ $train['Stazione di partenza'] }} - {{ $train['Stazione di Arrivo'] }} - {{ $train['Oraio di Partenza'] }} </h4>
+                <h4>{{ $train['Azienda'] }} - {{ $train['Stazione di Partenza'] }} - {{ $train['Stazione di Arrivo'] }} - {{ $train['Orario di Partenza'] }} </h4>
             </li>
 
             @endforeach

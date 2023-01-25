@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Controllers\Models\Train;
+use App\Models\Train;
 
 class TrainController extends Controller
 {
     public function train() {
-        $trains = Train::where("Orario di Partenza", (2023 - 01 - 24))->get();
+        // $trains = Train::where("Orario di Partenza", ("2023 - 01 - 24"))->get();
+        $trains = Train::all();
 
         dump($trains);
 

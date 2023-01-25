@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TrainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/train', function () {
-    return view('train');
-});
+Route::get('/', [ TrainController::class, "train"]);
 
-Route::get('/', function () {
-    return view('train');
-});
+
